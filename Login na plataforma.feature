@@ -1,6 +1,6 @@
             #language: pt
 
-            Contexto:
+             Contexto:
             Dado que eu acesse a pagina de login da EBAC
 
             Funcionalidade: Login na plataforma
@@ -13,6 +13,11 @@
             E a <senha>
             Então deve abrir a tela de pedidos
 
+            Exemplos: 
+            |usuario|senha|mensagem|
+            |"gabriel@ebac.com"|"teste123"|"Bem-Vindo"
+            |"rafael@ebac.com"|"melao123"|"Bem-Vindo"
+
             Esquema do Cenário: Usuario invalido
             Quando eu digitar o <usuario>
             E a <senha>
@@ -20,8 +25,9 @@
 
             Exemplos: 
             |usuario|senha|mensagem|
-            |"gabriel@ebac.com"|"teste123"|"Bem-Vindo"
-            |"gabriel@ebac.com"|"teste33333"|"usuario ou senha invalidos"
+            |"gabriel@ebac.com"|"teste"|"usuario ou senha invalidos"
+            |"tiago@ebac.com"|"otios"|"usuario ou senha invalidos"
+
 
 
 
